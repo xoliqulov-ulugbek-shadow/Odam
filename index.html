@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="conteiner">
+
+<h1>Jadval</h1> 
+
+<button id="dark">Dark</button>
+
+<div class="contarols">
+<button onclick="fetchUsers()">Foydalanuvchini Yuklash</button>
+<button onclick="sortUsers()">Ismi Bo'yicha Saralash</button>
+<button onclick="sortUsers()">Yosh Bo'yicha Saralasha</button>
+
+<input id="filterInput" placeholder="Ismni qidirush" type="text" oninput="filterUsers()">
+
+</div>
+
+<div class="loader" style="display: none;">
+    <span class="spinner">Yuklanmoqda....</span>
+</div>
+
+<div class="user-list" id="userList"></div>
+
+</div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
